@@ -21,6 +21,10 @@ class Route {
     return Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
   }
   
+  streetToInteger(){
+    
+  }
+  
    eastWestBlocks(){
      let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
      
