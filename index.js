@@ -33,6 +33,6 @@ class Route {
   }
   
   blocksTravelled(){
-    eastWestBlocks() + northSouthBlocks
+    return (eastWestBlocks() + northSouthBlocks)
   }
 }
