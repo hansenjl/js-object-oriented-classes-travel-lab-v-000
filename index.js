@@ -31,7 +31,7 @@ class Route {
     return (Math.abs(northSouth) + Math.abs(eastWest))
   }
   
-  estimatedTime(){
+  estimatedTime(peak){
     if(){
       return this.blocksTravelled() / 3
     }else{
