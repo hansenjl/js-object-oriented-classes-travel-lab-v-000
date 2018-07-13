@@ -28,6 +28,6 @@ class Route {
     
     let eastWest = Math.abs(streetToInteger(this.beginningLocation.horizontal) - streetToInteger(this.endingLocation.horizontal))
     
-    return (northSouthBlocks)
+    return (northSouth + eastWest)
   }
 }
