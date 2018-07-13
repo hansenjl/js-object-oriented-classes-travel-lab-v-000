@@ -18,16 +18,16 @@ class Route {
   }
   
   streetToInteger(street){
-    let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+    let eastWestArray = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     
-    return eastWest.indexOf(street)
+    return eastWestArray.indexOf(street)
   }
   
   blocksTravelled(){
     let northSouth = this.beginningLocation.vertical - this.endingLocation.vertical
     
     let eastWest = this.streetToInteger(this.beginningLocation.horizontal) - this.streetToInteger(this.endingLocation.horizontal)
-    return eastWest
+
     return (Math.abs(northSouth) + Math.abs(eastWest))
   }
 }
