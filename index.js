@@ -37,8 +37,5 @@ class Route {
     }else{
       return this.blocksTravelled() / 3 
     }
-    
-    //3 blocks per minute
-    //2 blocks per minute peak time
   }
 }
