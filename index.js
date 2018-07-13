@@ -23,14 +23,10 @@ class Route {
     eastWest.indexOf(street)
   }
   
-  eastWestBlocks(){
-    return Math.abs(streetToInteger(this.beginningLocation.horizontal) - streetToInteger(this.endingLocation.horizontal))
-  }
-  
   blocksTravelled(){
     let northSouth = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
     
-    let eastWest = 
+    let eastWest = return Math.abs(streetToInteger(this.beginningLocation.horizontal) - streetToInteger(this.endingLocation.horizontal))
     return (northSouthBlocks)
   }
 }
