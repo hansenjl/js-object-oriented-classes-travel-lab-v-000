@@ -22,6 +22,7 @@ class Route {
   }
   
    eastWestBlocks(){
+     
     return Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
   }
   
