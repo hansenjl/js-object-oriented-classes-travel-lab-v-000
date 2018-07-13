@@ -20,7 +20,7 @@ class Route {
   streetToInteger(street){
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     
-    eastWest.indexOf(street)
+    return eastWest.indexOf(street)
   }
   
   blocksTravelled(){
