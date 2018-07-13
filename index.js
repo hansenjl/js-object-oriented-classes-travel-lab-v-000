@@ -21,12 +21,14 @@ class Route {
     return Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
   }
   
-  streetToInteger(){
+  streetToInteger(street){
+    let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     
+    eastWest.indexOf(street)
   }
   
    eastWestBlocks(){
-     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+     
      
      
     return Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
