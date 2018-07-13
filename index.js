@@ -24,10 +24,10 @@ class Route {
   }
   
   blocksTravelled(){
-    let northSouth = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
+    let northSouth = this.beginningLocation.vertical - this.endingLocation.vertical
     
-    let eastWest = Math.abs(this.streetToInteger(this.beginningLocation.horizontal) - this.streetToInteger(this.endingLocation.horizontal))
+    let eastWest = this.streetToInteger(this.beginningLocation.horizontal) - this.streetToInteger(this.endingLocation.horizontal)
     
-    return (northSouth + eastWest)
+    return Math.abs(northSouth) + Math.abs(eastWest)
   }
 }
