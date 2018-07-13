@@ -17,10 +17,6 @@ class Route {
     this.endingLocation = endingLocation;
   }
   
-  northSouthBlocks(){
-    return Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
-  }
-  
   streetToInteger(street){
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     
@@ -32,6 +28,9 @@ class Route {
   }
   
   blocksTravelled(){
+    let northSouth = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
+    
+    let eastWest = 
     return (northSouthBlocks)
   }
 }
