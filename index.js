@@ -31,7 +31,7 @@ class Route {
      
      
      
-    return Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
+    return Math.abs(streetToInteger(this.beginningLocation.horizontal) - streetToInteger(this.endingLocation.horizontal))
   }
   
   blocksTravelled(){
