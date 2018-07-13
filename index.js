@@ -17,6 +17,10 @@ class Route {
     this.endingLocation = endingLocation;
   }
   
+  eastWest(){
+    this.beginningLocation.
+  }
+  
   blocksTravelled(){
     
   }
