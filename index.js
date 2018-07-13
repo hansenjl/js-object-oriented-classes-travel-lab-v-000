@@ -17,8 +17,8 @@ class Route {
     this.endingLocation = endingLocation;
   }
   
-  northSouth(){
-    this.beginningLocation.vertical - this.endingLocation.vertical
+  northSouthBlocks(){
+    return Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
   }
   
   blocksTravelled(){
