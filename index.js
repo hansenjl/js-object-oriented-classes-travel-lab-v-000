@@ -30,4 +30,8 @@ class Route {
 
     return (Math.abs(northSouth) + Math.abs(eastWest))
   }
+  
+  estimatedTime(){
+    
+  }
 }
