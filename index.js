@@ -21,6 +21,10 @@ class Route {
     return Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
   }
   
+   eastWestBlocks(){
+    return Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
+  }
+  
   blocksTravelled(){
     
   }
